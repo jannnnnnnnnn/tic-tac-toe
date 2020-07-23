@@ -29,8 +29,6 @@ allBoxes.forEach(function(x){
     //console.log('i am here');
 })
 
-
-
 //input x and o
 allBoxes.forEach(function(x){
     x.addEventListener('click',function(y){
@@ -49,6 +47,7 @@ allBoxes.forEach(function(x){
             } else {
                 alert ("Box is current occupied, Choose a different box.");
             }
+
             totalWinningCombo.forEach(function(a){
                 //alert(`oPlacement is ${oPlacement}`);
                 //does oPlacement have all the 
@@ -66,6 +65,7 @@ allBoxes.forEach(function(x){
                 //alert("i am in checking winning combo");
     
                 if (i==3){
+                    //setTimeout(function(){alert("Congrats! Player O wins")},500) 
                     alert ("Congrats! Player O wins");
                     numOfPlacement=9;
                     //i=0;
